@@ -1,8 +1,4 @@
 /**
- * Faites une copie de ce dépôt sur votre compte GitHub avant de commencer.
- */
-
-/**
  * Utiliser le tableau suivant
  */
 let numbers = [12, 56, 83, 45, 7, 56, 4, 14, 29];
