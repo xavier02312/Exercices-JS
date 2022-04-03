@@ -1,8 +1,4 @@
 /**
- * Faites une copie de ce dépôt sur votre compte GitHub avant de commencer.
- */
-
-/**
  * Utiliser le tableau suivant
  */
 const visiteurs = [
