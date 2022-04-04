@@ -49,8 +49,9 @@ const users = [
 /**
  * 1. Afficher les noms et les numéros de téléphone dans la console.
  */
-
-
+users.forEach(user => {
+  if ()
+})
 
 /**
  * 2. Afficher les informations de l'utilisateur ayant cet ID : 6249d07225e39f1d9520db2a
