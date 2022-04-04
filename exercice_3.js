@@ -50,15 +50,34 @@ const users = [
  * 1. Afficher les noms et les numéros de téléphone dans la console.
  */
 users.forEach(user => {
-  if ()
+    console.log(`${user.name} ${user.phone}`);
+});                                           //concaténation ${...} ${....}
+const listing = users.map(user => {
+  return [user.name, user.phone];
 })
+console.log(listing);
 
 /**
  * 2. Afficher les informations de l'utilisateur ayant cet ID : 6249d07225e39f1d9520db2a
  */
-
-
+users.forEach(user => {
+  if (user._id === "6249d07225e39f1d9520db2a") {
+      console.log(user);
+  }
+});
 
 /**
  * 3. Trouver les années de naissances de chaque utilisateur.
  */
+const currentYear = new Date().getFullYear();     //utiliser new Date().getFullYear remet la date tous les ans automatique//
+users.forEach(user => {
+  const birthday = currentYear - user.age;        
+    console.log(birthday);
+});
+
+/**
+ *  liens web: https://www.freecodecamp.org/news/javascript-date-now-how-to-get-the-current-date-in-javascript/
+ */
+const datNow = Date.now();                                            //Date Heure Seconde
+const date = new Date(datNow);
+console.log(date.getHours(), date.getUTCDate(), date.getUTCSeconds());
